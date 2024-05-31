@@ -1,5 +1,4 @@
-<h2>Comments</h2>
-<% @article.comments.each do |comment| %>
+<% unless comment.archieved? %>
   <p>
     <strong>Commenter:</strong>
     <%= comment.commenter %>
